@@ -1,0 +1,37 @@
+\hypertarget{test_8py}{}\doxysection{Projet\+ALQ/\+Jupyter Notebook/test.py File Reference}
+\label{test_8py}\index{ProjetALQ/Jupyter Notebook/test.py@{ProjetALQ/Jupyter Notebook/test.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetest}{test}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetest_a34f6448e77ae89e466e9526ac95049ed}{test.\+action}} (ev)
+\end{DoxyCompactItemize}
+\doxysubsection*{Constants}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{test.\+filename}} = \char`\"{}Commandes\+\_\+clients.\+csv\char`\"{}
+\item 
+pd \mbox{\hyperlink{namespacetest_a62a45cb37e32e283fb331a66d78b876f}{test.\+df}} = pd.\+read\+\_\+csv(filename)
+\item 
+pd \mbox{\hyperlink{namespacetest_a12a8446d6ade1dc8774220bc1cc47c68}{test.\+df\+\_\+remises}} = pd.\+read\+\_\+csv(filename)
+\item 
+pd \mbox{\hyperlink{namespacetest_a19700413f46b3b83d8ef011d680e30f4}{test.\+df\+\_\+produit}} = pd.\+read\+\_\+csv(filename)
+\item 
+pd \mbox{\hyperlink{namespacetest_a32ee85d0d0ff934ca4f55da13920cb19}{test.\+df\+\_\+client}} = pd.\+read\+\_\+csv(filename, encoding=\textquotesingle{}utf-\/8\textquotesingle{})
+\item 
+list \mbox{\hyperlink{namespacetest_a1ba8b1b2eefb6e6082562b373f87e8b1}{test.\+cost}} = \mbox{[}df\mbox{[}\char`\"{}Quantite\char`\"{}\mbox{]}\mbox{[}i\mbox{]}$\ast$df\+\_\+produit\mbox{[}\char`\"{}Prix\char`\"{}\mbox{]}\mbox{[}df\mbox{[}\char`\"{}Id\+Produit\char`\"{}\mbox{]}\mbox{[}i\mbox{]}-\/1\mbox{]} for i in df.\+index\mbox{]}
+\item 
+pd \mbox{\hyperlink{namespacetest_a51b0e88af56f465d3e95c110b9559913}{test.\+df\+\_\+importance}} = df.\+groupby(\mbox{[}\char`\"{}Id\+Client\char`\"{}\mbox{]}).sum().sort\+\_\+values(by=\char`\"{}Cost\char`\"{}, ascending=False)
+\item 
+list \mbox{\hyperlink{namespacetest_a2d90772d5169648adf4a0c6707bbf237}{test.\+Nom\+Client\+\_\+importance}} = \mbox{[}df\+\_\+client\mbox{[}\char`\"{}Nom\char`\"{}\mbox{]}\mbox{[}i-\/1\mbox{]} for i in list(df\+\_\+importance.\+index)\mbox{]}
+\item 
+tk \mbox{\hyperlink{namespacetest_a7f613d4cd4e344ceae7696a176142043}{test.\+root}} = tk.\+Tk()
+\item 
+tk \mbox{\hyperlink{namespacetest_a80efc4991d9e892c43195c35d9452317}{test.\+choix\+Label}} = tk.\+Label(root, text = \char`\"{}Veuillez choisir un client !\char`\"{})
+\item 
+ttk \mbox{\hyperlink{namespacetest_acffa018e7c07b97278b72ef3f7c75257}{test.\+liste\+Combo}} = ttk.\+Combobox(root, values=Nom\+Client\+\_\+importance)
+\end{DoxyCompactItemize}

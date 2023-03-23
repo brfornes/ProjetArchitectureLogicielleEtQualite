@@ -1,0 +1,110 @@
+\hypertarget{namespacetest}{}\doxysection{test Namespace Reference}
+\label{namespacetest}\index{test@{test}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacetest_a34f6448e77ae89e466e9526ac95049ed}{action}} (ev)
+\end{DoxyCompactItemize}
+\doxysubsection*{Constants}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{filename}} = \char`\"{}Commandes\+\_\+clients.\+csv\char`\"{}
+\item 
+pd \mbox{\hyperlink{namespacetest_a62a45cb37e32e283fb331a66d78b876f}{df}} = pd.\+read\+\_\+csv(\mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{filename}})
+\item 
+pd \mbox{\hyperlink{namespacetest_a12a8446d6ade1dc8774220bc1cc47c68}{df\+\_\+remises}} = pd.\+read\+\_\+csv(\mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{filename}})
+\item 
+pd \mbox{\hyperlink{namespacetest_a19700413f46b3b83d8ef011d680e30f4}{df\+\_\+produit}} = pd.\+read\+\_\+csv(\mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{filename}})
+\item 
+pd \mbox{\hyperlink{namespacetest_a32ee85d0d0ff934ca4f55da13920cb19}{df\+\_\+client}} = pd.\+read\+\_\+csv(\mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{filename}}, encoding=\textquotesingle{}utf-\/8\textquotesingle{})
+\item 
+list \mbox{\hyperlink{namespacetest_a1ba8b1b2eefb6e6082562b373f87e8b1}{cost}} = \mbox{[}\mbox{\hyperlink{namespacetest_a62a45cb37e32e283fb331a66d78b876f}{df}}\mbox{[}\char`\"{}Quantite\char`\"{}\mbox{]}\mbox{[}i\mbox{]}$\ast$\mbox{\hyperlink{namespacetest_a19700413f46b3b83d8ef011d680e30f4}{df\+\_\+produit}}\mbox{[}\char`\"{}Prix\char`\"{}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacetest_a62a45cb37e32e283fb331a66d78b876f}{df}}\mbox{[}\char`\"{}Id\+Produit\char`\"{}\mbox{]}\mbox{[}i\mbox{]}-\/1\mbox{]} for i in df.\+index\mbox{]}
+\item 
+pd \mbox{\hyperlink{namespacetest_a51b0e88af56f465d3e95c110b9559913}{df\+\_\+importance}} = df.\+groupby(\mbox{[}\char`\"{}Id\+Client\char`\"{}\mbox{]}).sum().sort\+\_\+values(by=\char`\"{}Cost\char`\"{}, ascending=False)
+\item 
+list \mbox{\hyperlink{namespacetest_a2d90772d5169648adf4a0c6707bbf237}{Nom\+Client\+\_\+importance}} = \mbox{[}\mbox{\hyperlink{namespacetest_a32ee85d0d0ff934ca4f55da13920cb19}{df\+\_\+client}}\mbox{[}\char`\"{}Nom\char`\"{}\mbox{]}\mbox{[}i-\/1\mbox{]} for i in list(df\+\_\+importance.\+index)\mbox{]}
+\item 
+tk \mbox{\hyperlink{namespacetest_a7f613d4cd4e344ceae7696a176142043}{root}} = tk.\+Tk()
+\item 
+tk \mbox{\hyperlink{namespacetest_a80efc4991d9e892c43195c35d9452317}{choix\+Label}} = tk.\+Label(\mbox{\hyperlink{namespacetest_a7f613d4cd4e344ceae7696a176142043}{root}}, text = \char`\"{}Veuillez choisir un client !\char`\"{})
+\item 
+ttk \mbox{\hyperlink{namespacetest_acffa018e7c07b97278b72ef3f7c75257}{liste\+Combo}} = ttk.\+Combobox(\mbox{\hyperlink{namespacetest_a7f613d4cd4e344ceae7696a176142043}{root}}, values=\mbox{\hyperlink{namespacetest_a2d90772d5169648adf4a0c6707bbf237}{Nom\+Client\+\_\+importance}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetest_a34f6448e77ae89e466e9526ac95049ed}\label{namespacetest_a34f6448e77ae89e466e9526ac95049ed}} 
+\index{test@{test}!action@{action}}
+\index{action@{action}!test@{test}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily def test.\+action (\begin{DoxyParamCaption}\item[{}]{ev }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Constant Documentation}
+\mbox{\Hypertarget{namespacetest_a80efc4991d9e892c43195c35d9452317}\label{namespacetest_a80efc4991d9e892c43195c35d9452317}} 
+\index{test@{test}!choixLabel@{choixLabel}}
+\index{choixLabel@{choixLabel}!test@{test}}
+\doxysubsubsection{\texorpdfstring{choixLabel}{choixLabel}}
+{\footnotesize\ttfamily tk test.\+choix\+Label = tk.\+Label(\mbox{\hyperlink{namespacetest_a7f613d4cd4e344ceae7696a176142043}{root}}, text = \char`\"{}Veuillez choisir un client !\char`\"{})}
+
+\mbox{\Hypertarget{namespacetest_a1ba8b1b2eefb6e6082562b373f87e8b1}\label{namespacetest_a1ba8b1b2eefb6e6082562b373f87e8b1}} 
+\index{test@{test}!cost@{cost}}
+\index{cost@{cost}!test@{test}}
+\doxysubsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily list test.\+cost = \mbox{[}\mbox{\hyperlink{namespacetest_a62a45cb37e32e283fb331a66d78b876f}{df}}\mbox{[}\char`\"{}Quantite\char`\"{}\mbox{]}\mbox{[}i\mbox{]}$\ast$\mbox{\hyperlink{namespacetest_a19700413f46b3b83d8ef011d680e30f4}{df\+\_\+produit}}\mbox{[}\char`\"{}Prix\char`\"{}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacetest_a62a45cb37e32e283fb331a66d78b876f}{df}}\mbox{[}\char`\"{}Id\+Produit\char`\"{}\mbox{]}\mbox{[}i\mbox{]}-\/1\mbox{]} for i in df.\+index\mbox{]}}
+
+\mbox{\Hypertarget{namespacetest_a62a45cb37e32e283fb331a66d78b876f}\label{namespacetest_a62a45cb37e32e283fb331a66d78b876f}} 
+\index{test@{test}!df@{df}}
+\index{df@{df}!test@{test}}
+\doxysubsubsection{\texorpdfstring{df}{df}}
+{\footnotesize\ttfamily pd test.\+df = pd.\+read\+\_\+csv(\mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{filename}})}
+
+\mbox{\Hypertarget{namespacetest_a32ee85d0d0ff934ca4f55da13920cb19}\label{namespacetest_a32ee85d0d0ff934ca4f55da13920cb19}} 
+\index{test@{test}!df\_client@{df\_client}}
+\index{df\_client@{df\_client}!test@{test}}
+\doxysubsubsection{\texorpdfstring{df\_client}{df\_client}}
+{\footnotesize\ttfamily pd test.\+df\+\_\+client = pd.\+read\+\_\+csv(\mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{filename}}, encoding=\textquotesingle{}utf-\/8\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacetest_a51b0e88af56f465d3e95c110b9559913}\label{namespacetest_a51b0e88af56f465d3e95c110b9559913}} 
+\index{test@{test}!df\_importance@{df\_importance}}
+\index{df\_importance@{df\_importance}!test@{test}}
+\doxysubsubsection{\texorpdfstring{df\_importance}{df\_importance}}
+{\footnotesize\ttfamily pd test.\+df\+\_\+importance = df.\+groupby(\mbox{[}\char`\"{}Id\+Client\char`\"{}\mbox{]}).sum().sort\+\_\+values(by=\char`\"{}Cost\char`\"{}, ascending=False)}
+
+\mbox{\Hypertarget{namespacetest_a19700413f46b3b83d8ef011d680e30f4}\label{namespacetest_a19700413f46b3b83d8ef011d680e30f4}} 
+\index{test@{test}!df\_produit@{df\_produit}}
+\index{df\_produit@{df\_produit}!test@{test}}
+\doxysubsubsection{\texorpdfstring{df\_produit}{df\_produit}}
+{\footnotesize\ttfamily pd test.\+df\+\_\+produit = pd.\+read\+\_\+csv(\mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{filename}})}
+
+\mbox{\Hypertarget{namespacetest_a12a8446d6ade1dc8774220bc1cc47c68}\label{namespacetest_a12a8446d6ade1dc8774220bc1cc47c68}} 
+\index{test@{test}!df\_remises@{df\_remises}}
+\index{df\_remises@{df\_remises}!test@{test}}
+\doxysubsubsection{\texorpdfstring{df\_remises}{df\_remises}}
+{\footnotesize\ttfamily pd test.\+df\+\_\+remises = pd.\+read\+\_\+csv(\mbox{\hyperlink{namespacetest_aac0e1454423b062770a59edb4fa1a502}{filename}})}
+
+\mbox{\Hypertarget{namespacetest_aac0e1454423b062770a59edb4fa1a502}\label{namespacetest_aac0e1454423b062770a59edb4fa1a502}} 
+\index{test@{test}!filename@{filename}}
+\index{filename@{filename}!test@{test}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily str test.\+filename = \char`\"{}Commandes\+\_\+clients.\+csv\char`\"{}}
+
+\mbox{\Hypertarget{namespacetest_acffa018e7c07b97278b72ef3f7c75257}\label{namespacetest_acffa018e7c07b97278b72ef3f7c75257}} 
+\index{test@{test}!listeCombo@{listeCombo}}
+\index{listeCombo@{listeCombo}!test@{test}}
+\doxysubsubsection{\texorpdfstring{listeCombo}{listeCombo}}
+{\footnotesize\ttfamily ttk test.\+liste\+Combo = ttk.\+Combobox(\mbox{\hyperlink{namespacetest_a7f613d4cd4e344ceae7696a176142043}{root}}, values=\mbox{\hyperlink{namespacetest_a2d90772d5169648adf4a0c6707bbf237}{Nom\+Client\+\_\+importance}})}
+
+\mbox{\Hypertarget{namespacetest_a2d90772d5169648adf4a0c6707bbf237}\label{namespacetest_a2d90772d5169648adf4a0c6707bbf237}} 
+\index{test@{test}!NomClient\_importance@{NomClient\_importance}}
+\index{NomClient\_importance@{NomClient\_importance}!test@{test}}
+\doxysubsubsection{\texorpdfstring{NomClient\_importance}{NomClient\_importance}}
+{\footnotesize\ttfamily list test.\+Nom\+Client\+\_\+importance = \mbox{[}\mbox{\hyperlink{namespacetest_a32ee85d0d0ff934ca4f55da13920cb19}{df\+\_\+client}}\mbox{[}\char`\"{}Nom\char`\"{}\mbox{]}\mbox{[}i-\/1\mbox{]} for i in list(df\+\_\+importance.\+index)\mbox{]}}
+
+\mbox{\Hypertarget{namespacetest_a7f613d4cd4e344ceae7696a176142043}\label{namespacetest_a7f613d4cd4e344ceae7696a176142043}} 
+\index{test@{test}!root@{root}}
+\index{root@{root}!test@{test}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily tk test.\+root = tk.\+Tk()}
+
